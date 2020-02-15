@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HusionApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="tab_menu_alert">灯光</string>
+    <string name="tab_menu_profile">空调</string>
+    <string name="tab_menu_pay">电脑</string>
+    <string name="tab_menu_setting">关于</string>
+
+
+</resources>
