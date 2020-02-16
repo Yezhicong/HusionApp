@@ -2,6 +2,7 @@ package com.jay.fragmentdemo4;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -59,6 +60,14 @@ public class ComputerAdapter extends RecyclerView.Adapter<ComputerAdapter.ViewHo
                 final MyCommand myCommand = CommandList.get(position);
                 if(isChecked){
                     if (flag){
+                        Log.i("TAG", "123");
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                Log.i("TAG", "321");
+                            }
+                        }, 2000);
                         //MySocket.TcpSocketConnect mySocket =  new MySocket.TcpSocketConnect(myCommand.getIp(), myCommand.getPort(), myCommand.getIsHex(), myCommand.getMsg() + "on");
                         //mySocket.start();
                     }
@@ -115,29 +124,29 @@ public class ComputerAdapter extends RecyclerView.Adapter<ComputerAdapter.ViewHo
     }
 
     public void initCommand(){
-        MyCommand a1 = new MyCommand("192.168.88.221", 4800, 0, "HS-REL-setrelay-03-");
+        MyCommand a1 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-01-on");
         CommandList.add(a1);
-        MyCommand a2 = new MyCommand("192.168.88.221", 4800, 0, "HS-REL-setrelay-05-");
+        MyCommand a2 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-01-off");
         CommandList.add(a2);
-        MyCommand a3 = new MyCommand("192.168.88.221", 4800, 0, "HS-REL-setrelay-04-");
+        MyCommand a3 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-02-on");
         CommandList.add(a3);
-        MyCommand a4 = new MyCommand("192.168.88.221", 4800, 0, "HS-REL-setrelay-07-");
+        MyCommand a4 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-02-off");
         CommandList.add(a4);
-        MyCommand a5 = new MyCommand("192.168.88.220", 4800, 0, "HS-REL-setrelay-05-");
+        MyCommand a5 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-03-on");
         CommandList.add(a5);
-        MyCommand a6 = new MyCommand("192.168.88.221", 4800, 0, "HS-REL-setrelay-01-");
+        MyCommand a6 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-03-off");
         CommandList.add(a6);
-        MyCommand a7 = new MyCommand("192.168.88.221", 4800, 0, "HS-REL-setrelay-02-");
+        MyCommand a7 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-04-on");
         CommandList.add(a7);
-        MyCommand a8 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-setrelay-03-");
+        MyCommand a8 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-04-off");
         CommandList.add(a8);
-        MyCommand a9 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-setrelay-06-");
+        MyCommand a9 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-05-on");
         CommandList.add(a9);
-        MyCommand a10 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-setrelay-05-");
+        MyCommand a10 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-05-off");
         CommandList.add(a10);
-        MyCommand a11 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-setrelay-04-");
+        MyCommand a11 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-06-on");
         CommandList.add(a11);
-        MyCommand a12 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-setrelay-02-");
+        MyCommand a12 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-06-off");
         CommandList.add(a12);
         MyCommand a13 = new MyCommand("192.168.88.220", 4800, 0, "HS-REL-setrelay-03-");
         CommandList.add(a13);
