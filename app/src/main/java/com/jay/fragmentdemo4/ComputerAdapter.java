@@ -1,9 +1,7 @@
 package com.jay.fragmentdemo4;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,11 +11,8 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.jay.fragmentdemo4.MyClass.CommomDialog;
 import com.jay.fragmentdemo4.MyClass.MyCommand;
-
 import java.util.ArrayList;
 import java.util.List;
 

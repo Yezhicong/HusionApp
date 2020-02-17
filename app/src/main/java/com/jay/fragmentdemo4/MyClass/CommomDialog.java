@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
-
 import com.jay.fragmentdemo4.R;
 
 public class CommomDialog extends Dialog implements View.OnClickListener{

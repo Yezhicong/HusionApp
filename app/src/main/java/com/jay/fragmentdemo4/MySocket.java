@@ -14,6 +14,7 @@ public class MySocket {
         private int port;
         private String msg;
         private int isHex;
+
         public TcpSocketConnect(String ip, int port, int isHex, String msg){
             this.ip = ip;
             this.port = port;
