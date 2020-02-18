@@ -92,7 +92,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/bg_white"
                 android:theme="@android:style/Theme.Translucent"
-                android:text="  找回密码"
+                android:text="  忘记密码"
                 android:textColor="@color/text_blue"/>
 
         </LinearLayout>

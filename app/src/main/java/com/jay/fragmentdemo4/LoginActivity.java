@@ -54,10 +54,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 userLogin();
                 break;
             case R.id.register_button:
-                Toast.makeText(this, "不给注册，哈哈!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "不给注册，哈哈哈!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.forget_button:
-                Toast.makeText(this, "忘了就忘了吧!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "忘了就随缘吧!", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
