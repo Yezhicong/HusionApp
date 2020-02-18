@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         ViewPager.OnPageChangeListener {
 
     //UI Objects
-    private RadioGroup rg_tab_bar;
     private RadioButton rb_channel;
     private RadioButton rb_message;
     private RadioButton rb_better;
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
     private void bindViews() {
 
-        rg_tab_bar = findViewById(R.id.rg_tab_bar);
+        RadioGroup rg_tab_bar = findViewById(R.id.rg_tab_bar);
         rb_channel = findViewById(R.id.rb_channel);
         rb_message = findViewById(R.id.rb_message);
         rb_better  = findViewById(R.id.rb_better);
