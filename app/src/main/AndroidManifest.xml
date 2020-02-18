@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jay.fragmentdemo4" >
+    package="com.jay.fragmentdemo4">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/husion"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
