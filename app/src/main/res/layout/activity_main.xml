@@ -14,7 +14,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:src="@drawable/logo_" />
+            android:src="@drawable/logo" />
 
         <View
             android:layout_width="match_parent"
@@ -22,9 +22,7 @@
             android:layout_alignParentBottom="true"
             android:background="@color/div_white" />
 
-    </RelativeLayout
-        >
-
+    </RelativeLayout>
 
     <RadioGroup
         android:id="@+id/rg_tab_bar"

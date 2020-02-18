@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         this.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        getWindow().setStatusBarColor(Color.parseColor ("#ffffff"));
+        getWindow().setStatusBarColor(Color.parseColor ("#fcfcfc"));
 
         Button loginBt = findViewById(R.id.login_button);
         Button registerBt = findViewById(R.id.register_button);
