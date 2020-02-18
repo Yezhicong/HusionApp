@@ -5,6 +5,8 @@
     <color name="bg_topbar">#FCFCFC</color>
     <color name="bg_gray">#E5E5E5</color>
     <color name="bg_blue">#2196F3</color>
+    <color name="bg_gray1">#BBB6B6</color>
+    <color name="bg_red">#FA6D63</color>
     <color name="transparent">#00FFFFFF</color>
 
     <color name="text_gray">#8D7A71</color>

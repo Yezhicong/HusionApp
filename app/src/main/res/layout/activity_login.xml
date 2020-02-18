@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/icon"/>
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_myedittext"
+            android:drawableLeft="@drawable/touxiang"
+            android:hint="账号"
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_black"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_myedittext"
+            android:drawableLeft="@drawable/mima"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_black"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="登  录"
+            android:textColor="@color/text_white"
+            android:textSize="20sp"
+            android:background="@drawable/bg_login_button"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/bg_white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
