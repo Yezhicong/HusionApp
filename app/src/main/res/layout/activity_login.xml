@@ -8,9 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
         android:orientation="vertical"
-        android:layout_centerHorizontal="true">
+        android:layout_centerInParent="true">
 
         <ImageView
             android:layout_width="80dp"
@@ -25,14 +24,15 @@
             android:layout_gravity="center"
             android:layout_marginBottom="50dp"
             android:text="移动端控制软件"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/text_black"/>
 
         <EditText
             android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/bg_myedittext1"
+            android:layout_marginBottom="-2px"
+            android:background="@drawable/bg_edittext_down"
             android:drawableLeft="@drawable/touxiang"
             android:hint="账号"
             android:textColorHint="@color/text_gray"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/bg_myedittext"
+            android:background="@drawable/bg_edittext_up"
             android:drawableLeft="@drawable/mima"
             android:hint="密码"
             android:inputType="textPassword"
@@ -96,6 +96,10 @@
                 android:textColor="@color/text_blue"/>
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
 
     </LinearLayout>
 
