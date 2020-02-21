@@ -506,7 +506,6 @@ public class DLRoundMenuView extends View {
     }
 
     public interface OnMenuClickListener {
-
         void OnMenuClick(int position, int state);
     }
 
