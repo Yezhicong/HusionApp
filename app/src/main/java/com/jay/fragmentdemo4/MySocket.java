@@ -1,6 +1,11 @@
 package com.jay.fragmentdemo4;
 
 import android.util.Log;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -25,13 +30,20 @@ public class MySocket {
             try {
                 Socket mSocket = new Socket(ip, port);
                 mSocket.setSoTimeout(1000);
-                if(mSocket != null){
+                if(mSocket.isConnected()){
                     OutputStream mOutStream = mSocket.getOutputStream();
+                    InputStream mInputStream = mSocket.getInputStream();
+
                     if (isHex == 1) {
                         mOutStream.write(hexStringToByteArray(msg));
                     } else {
                         mOutStream.write(msg.getBytes());
                     }
+
+                    final byte[] buffer = new byte[1024];//创建接收缓冲区
+					final int len = mInputStream.read(buffer);//数据读出来，并且返回数据的长度
+					Log.i("TAG", new String(buffer,0,len));
+
                     mOutStream.flush();
                     mSocket.shutdownOutput();
                     mSocket.close();
@@ -40,7 +52,7 @@ public class MySocket {
                 Log.e("TAG", e.getMessage() + " / send: " + msg + " failed!");
                 return;
             }
-            Log.i("TAG", " / send:" + msg + " success!");
+            Log.i("TAG", "send:" + msg + " success!");
         }
     }
 

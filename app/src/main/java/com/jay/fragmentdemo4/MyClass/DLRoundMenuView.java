@@ -128,19 +128,19 @@ public class DLRoundMenuView extends View {
         // 加载默认资源
         final Resources res = getResources();
         final boolean defaultHasCoreMenu = res.getBoolean(R.bool.default_has_core_menu);
-        final int defaultCoreMenuNormalBackgroundColor = res.getColor(R.color.default_core_menu_normal_background_color);
-        final int defaultCoreMenuStrokeColor = res.getColor(R.color.default_core_menu_stroke_color);
+        final int defaultCoreMenuNormalBackgroundColor = res.getColor(R.color.default_core_menu_normal_background_color, mContext.getTheme());
+        final int defaultCoreMenuStrokeColor = res.getColor(R.color.default_core_menu_stroke_color, mContext.getTheme());
         final float defaultCoreMenuStrokeSize = res.getDimension(R.dimen.default_core_menu_stroke_size);
-        final int defaultCoreMenuSelectedBackgroundColor = res.getColor(R.color.default_core_menu_selected_background_color);
-        final Drawable defaultCoreMenuDrawable = res.getDrawable(R.drawable.default_core_menu_drawable);
+        final int defaultCoreMenuSelectedBackgroundColor = res.getColor(R.color.default_core_menu_selected_background_color, mContext.getTheme());
+        final Drawable defaultCoreMenuDrawable = res.getDrawable(R.drawable.default_core_menu_drawable, mContext.getTheme());
         final float defaultCoreMenuRoundRadius = res.getDimension(R.dimen.default_core_menu_round_radius);
         final int defaultRoundMenuNumber = res.getInteger(R.integer.default_round_menu_number);
         final int defaultRoundMenuDeviationDegree = res.getInteger(R.integer.default_round_menu_deviation_degree);
-        final Drawable defaultRoundMenuDrawable = res.getDrawable(R.drawable.default_round_menu_drawable);
+        final Drawable defaultRoundMenuDrawable = res.getDrawable(R.drawable.default_round_menu_drawable, mContext.getTheme());
         final boolean defaultIsDrawLineToCenter = res.getBoolean(R.bool.default_is_draw_line_to_center);
-        final int defaultRoundMenuNormalBackgroundColor = res.getColor(R.color.default_round_menu_normal_background_color);
-        final int defaultRoundMenuSelectedBackgroundColor = res.getColor(R.color.default_round_menu_selected_background_color);
-        final int defaultRoundMenuStrokeColor = res.getColor(R.color.default_round_menu_stroke_color);
+        final int defaultRoundMenuNormalBackgroundColor = res.getColor(R.color.default_round_menu_normal_background_color, mContext.getTheme());
+        final int defaultRoundMenuSelectedBackgroundColor = res.getColor(R.color.default_round_menu_selected_background_color, mContext.getTheme());
+        final int defaultRoundMenuStrokeColor = res.getColor(R.color.default_round_menu_stroke_color, mContext.getTheme());
         final float defaultRoundMenuStrokeSize = res.getDimension(R.dimen.default_round_menu_stroke_size);
         final float defaultRoundMenuDistance = res.getFraction(R.fraction.default_round_menu_distance, 1, 1);
         // 读取配置信息

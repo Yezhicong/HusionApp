@@ -54,7 +54,7 @@ public class LightAdapter extends RecyclerView.Adapter<LightAdapter.ViewHolder> 
                 //Light light = mLightList.get(position);
                 MyCommand myCommand = CommandList.get(position);
                 if(isChecked){
-                    MySocket.TcpSocketConnect mySocket =  new MySocket.TcpSocketConnect(myCommand.getIp(), myCommand.getPort(), myCommand.getIsHex(), myCommand.getMsg() + "on");
+                    MySocket.TcpSocketConnect mySocket =  new MySocket.TcpSocketConnect(myCommand.getIp(), myCommand.getPort(), myCommand.getIsHex(), myCommand.getMsg());
                     mySocket.start();
                 }else {
                     MySocket.TcpSocketConnect mySocket =  new MySocket.TcpSocketConnect(myCommand.getIp(), myCommand.getPort(), myCommand.getIsHex(), myCommand.getMsg() + "off");
@@ -92,7 +92,7 @@ public class LightAdapter extends RecyclerView.Adapter<LightAdapter.ViewHolder> 
         CommandList.add(a6);
         MyCommand a7 = new MyCommand("192.168.88.221", 4800, 0, "HS-REL-setrelay-02-");
         CommandList.add(a7);
-        MyCommand a8 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-setrelay-03-");
+        MyCommand a8 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-getrelay-03");
         CommandList.add(a8);
         MyCommand a9 = new MyCommand("192.168.88.223", 4800, 0, "HS-REL-setrelay-06-");
         CommandList.add(a9);

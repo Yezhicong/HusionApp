@@ -10,17 +10,17 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         app:RMHasCoreMenu="true"
-        app:RMCoreMenuNormalBackgroundColor="#ffffffff"
-        app:RMCoreMenuStrokeColor="#cc999999"
+        app:RMCoreMenuNormalBackgroundColor="@color/white"
+        app:RMCoreMenuStrokeColor="@color/gray"
         app:RMCoreMenuStrokeSize="1dp"
         app:RMRoundMenuStrokeSize="1dp"
-        app:RMCoreMenuSelectedBackgroundColor="#cc999999"
+        app:RMCoreMenuSelectedBackgroundColor="@color/gray"
         app:RMCoreMenuRoundRadius="50dp"
         app:RMRoundMenuNumber="4"
         app:RMIsDrawLineToCenter="false"
-        app:RMRoundMenuNormalBackgroundColor="@color/bg_white"
+        app:RMRoundMenuNormalBackgroundColor="@color/white"
         app:RMRoundMenuDistance="80%"
         app:RMCoreMenuDrawable="@mipmap/circle"
         app:RMRoundMenuDrawable="@mipmap/go"
@@ -28,5 +28,34 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/dl_rmv">
+
+        <ImageButton
+            android:id="@+id/register_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/suoxiao"
+            android:background="@drawable/bg_camera_button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/forget_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/fangda"
+            android:background="@drawable/bg_camera_button"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

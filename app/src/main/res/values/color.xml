@@ -98,7 +98,6 @@
     <color name="greenyellow">#adff2f</color><!--黄绿色 -->
     <color name="lightblue">#add8e6</color><!--亮蓝色 -->
     <color name="darkgray">#a9a9a9</color><!--暗灰色 -->
-    <color name="darkgrey">#a9a9a9</color><!--暗灰色 -->
     <color name="brown">#a52a2a</color><!--褐色 -->
     <color name="sienna">#a0522d</color><!--赭色 -->
     <color name="darkorchid">#9932cc</color><!--暗紫色 -->
@@ -114,7 +113,6 @@
     <color name="lightskyblue">#87cefa</color><!--亮天蓝色 -->
     <color name="skyblue">#87ceeb</color><!--天蓝色 -->
     <color name="gray">#808080</color><!--灰色 -->
-    <color name="grey">#808080</color><!--灰色 -->
     <color name="olive">#808000</color><!--橄榄色 -->
     <color name="purple">#800080</color><!--紫色 -->
     <color name="maroon">#800000</color><!--粟色 -->
@@ -125,11 +123,9 @@
     <color name="lightslategray">#778899</color><!--亮蓝灰 -->
     <color name="lightslategrey">#778899</color><!--亮蓝灰 -->
     <color name="slategray">#708090</color><!--灰石色 -->
-    <color name="slategrey">#708090</color><!--灰石色 -->
     <color name="olivedrab">#6b8e23</color><!--深绿褐色 -->
     <color name="slateblue">#6a5acd</color><!--石蓝色 -->
     <color name="dimgray">#696969</color><!--暗灰色 -->
-    <color name="dimgrey">#696969</color><!--暗灰色 -->
     <color name="mediumaquamarine">#66cdaa</color><!--中绿色 -->
     <color name="cornflowerblue">#6495ed</color><!--菊兰色 -->
     <color name="cadetblue">#5f9ea0</color><!--军兰色 -->
@@ -143,7 +139,6 @@
     <color name="mediumseagreen">#3cb371</color><!--中海蓝 -->
     <color name="limegreen">#32cd32</color><!--橙绿色 -->
     <color name="darkslategray">#2f4f4f</color><!--暗瓦灰色 -->
-    <color name="darkslategrey">#2f4f4f</color><!--暗瓦灰色 -->
     <color name="seagreen">#2e8b57</color><!--海绿色 -->
     <color name="forestgreen">#228b22</color><!--森林绿 -->
     <color name="lightseagreen">#20b2aa</color><!--亮海蓝色 -->
