@@ -17,16 +17,15 @@ import com.jay.fragmentdemo4.MyClass.DLRoundMenuView;
 public class MyFragment4 extends Fragment {
 
     private Button logoutBt;
-    //private DLRoundMenuView dlRoundMenuView;
+    private DLRoundMenuView dlRoundMenuView;
 
     public MyFragment4() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fg_about,container,false);
+        final View view = inflater.inflate(R.layout.fg_camera,container,false);
 
-        /*
         dlRoundMenuView = view.findViewById(R.id.dl_rmv);
         dlRoundMenuView.setOnMenuClickListener(new DLRoundMenuView.OnMenuClickListener() {
             @Override
@@ -38,16 +37,15 @@ public class MyFragment4 extends Fragment {
                 }
             }
         });
-        */
 
-        logoutBt = view.findViewById(R.id.logout_button);
+        /*logoutBt = view.findViewById(R.id.logout_button);
         logoutBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), LoginActivity.class);
                 startActivity(intent);
            }
-        });
+        });*/
 
         return view;
     }

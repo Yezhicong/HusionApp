@@ -3,11 +3,11 @@
     <bool name="default_has_core_menu">true</bool>
     <bool name="default_is_draw_line_to_center">false</bool>
     <color name="default_core_menu_normal_background_color">#ffffffff</color>
-    <color name="default_core_menu_selected_background_color">#ff888888</color>
-    <color name="default_core_menu_stroke_color">#ff666666</color>
+    <color name="default_core_menu_selected_background_color">#a9a9a9</color>
+    <color name="default_core_menu_stroke_color">#a9a9a9</color>
     <color name="default_round_menu_normal_background_color">#ffffffff</color>
-    <color name="default_round_menu_selected_background_color">#ff888888</color>
-    <color name="default_round_menu_stroke_color">#ff666666</color>
+    <color name="default_round_menu_selected_background_color">#a9a9a9</color>
+    <color name="default_round_menu_stroke_color">#a9a9a9</color>
     <dimen name="default_core_menu_round_radius">40sp</dimen>
     <dimen name="default_core_menu_stroke_size">1px</dimen>
     <dimen name="default_round_menu_stroke_size">1px</dimen>

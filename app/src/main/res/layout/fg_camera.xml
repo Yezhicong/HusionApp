@@ -13,10 +13,10 @@
         android:layout_marginTop="100dp"
         app:RMHasCoreMenu="true"
         app:RMCoreMenuNormalBackgroundColor="@color/white"
-        app:RMCoreMenuStrokeColor="@color/gray"
+        app:RMCoreMenuStrokeColor="@color/darkgray"
         app:RMCoreMenuStrokeSize="1dp"
         app:RMRoundMenuStrokeSize="1dp"
-        app:RMCoreMenuSelectedBackgroundColor="@color/gray"
+        app:RMCoreMenuSelectedBackgroundColor="@color/darkgray"
         app:RMCoreMenuRoundRadius="50dp"
         app:RMRoundMenuNumber="4"
         app:RMIsDrawLineToCenter="false"
@@ -36,7 +36,7 @@
         android:layout_below="@+id/dl_rmv">
 
         <ImageButton
-            android:id="@+id/register_button"
+            android:id="@+id/suoxiao_button"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="50dp"
@@ -49,7 +49,7 @@
             android:layout_height="match_parent"/>
 
         <ImageButton
-            android:id="@+id/forget_button"
+            android:id="@+id/fangda_button"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginRight="50dp"
