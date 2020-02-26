@@ -1,11 +1,7 @@
 package com.jay.fragmentdemo4;
 
 import android.util.Log;
-
-import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -26,6 +22,7 @@ public class MySocket {
             this.msg = msg;
             this.isHex = isHex;
         }
+
         public void run(){
             try {
                 Socket mSocket = new Socket(ip, port);
@@ -42,7 +39,9 @@ public class MySocket {
 
                     final byte[] buffer = new byte[1024];//创建接收缓冲区
 					final int len = mInputStream.read(buffer);//数据读出来，并且返回数据的长度
-					Log.i("TAG", new String(buffer,0,len));
+                    if (len != 0){
+                        Log.i("TAG", new String(buffer,0, len));
+                    }
 
                     mOutStream.flush();
                     mSocket.shutdownOutput();
@@ -61,12 +60,14 @@ public class MySocket {
         private int port;
         private String msg;
         private int isHex;
+
         public UdpSocketConnect(String ip, int port, int isHex, String msg){
             this.ip = ip;
             this.port = port;
             this.msg = msg;
             this.isHex = isHex;
         }
+
         public void run(){
             try {
                 DatagramSocket mSocket = new DatagramSocket();
