@@ -1,4 +1,4 @@
-package com.jay.fragmentdemo4;
+package com.jay.fragmentdemo4.ui.computer;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,17 +7,20 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.jay.fragmentdemo4.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Jay on 2015/8/28 0028.
  */
-public class MyFragment3 extends Fragment {
+public class ComputerFragment extends Fragment {
 
     private List<Computer> computerList = new ArrayList<>();
 
-    public MyFragment3() {
+    public ComputerFragment() {
     }
 
     @Override

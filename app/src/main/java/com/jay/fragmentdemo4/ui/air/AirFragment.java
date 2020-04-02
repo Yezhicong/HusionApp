@@ -1,4 +1,4 @@
-package com.jay.fragmentdemo4;
+package com.jay.fragmentdemo4.ui.air;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,17 +7,20 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.jay.fragmentdemo4.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Jay on 2015/8/28 0028.
  */
-public class MyFragment2 extends Fragment {
+public class AirFragment extends Fragment {
 
     private List<Air> airList = new ArrayList<>();
 
-    public MyFragment2() {
+    public AirFragment() {
     }
 
     @Override

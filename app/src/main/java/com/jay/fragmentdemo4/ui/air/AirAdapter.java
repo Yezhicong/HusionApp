@@ -1,4 +1,4 @@
-package com.jay.fragmentdemo4;
+package com.jay.fragmentdemo4.ui.air;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +10,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
-import com.jay.fragmentdemo4.MyClass.MyCommand;
+
+import com.jay.fragmentdemo4.R;
+import com.jay.fragmentdemo4.View.MyCommand;
+import com.jay.fragmentdemo4.socket.MySocket;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,67 +115,67 @@ public class AirAdapter extends RecyclerView.Adapter<AirAdapter.ViewHolder> {
 
     public void initCommand(){
 
-        MyCommand a1 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-02-002");
+        MyCommand a1 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-02-002");
         CommandList.add(a1);
-        MyCommand a2 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-02-001");
+        MyCommand a2 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-02-001");
         CommandList.add(a2);
-        MyCommand a3 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-02-003");
+        MyCommand a3 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-02-003");
         CommandList.add(a3);
 
-        MyCommand a4 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-03-002");
+        MyCommand a4 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-03-002");
         CommandList.add(a4);
-        MyCommand a5 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-03-001");
+        MyCommand a5 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-03-001");
         CommandList.add(a5);
-        MyCommand a6 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-03-003");
+        MyCommand a6 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-03-003");
         CommandList.add(a6);
 
-        MyCommand a7 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-01-002");
+        MyCommand a7 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-01-002");
         CommandList.add(a7);
-        MyCommand a8 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-01-001");
+        MyCommand a8 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-01-001");
         CommandList.add(a8);
-        MyCommand a9 = new MyCommand("192.168.88.226", 4800, 0, "HS-DNC-sndir-01-003");
+        MyCommand a9 = new MyCommand("192.168.88.226", 4800, false, "HS-DNC-sndir-01-003");
         CommandList.add(a9);
 
-        MyCommand a10 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-08-002");
+        MyCommand a10 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-08-002");
         CommandList.add(a10);
-        MyCommand a11 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-08-001");
+        MyCommand a11 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-08-001");
         CommandList.add(a11);
-        MyCommand a12 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-08-003");
+        MyCommand a12 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-08-003");
         CommandList.add(a12);
 
-        MyCommand a13 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-07-002");
+        MyCommand a13 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-07-002");
         CommandList.add(a13);
-        MyCommand a14 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-07-001");
+        MyCommand a14 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-07-001");
         CommandList.add(a14);
-        MyCommand a15 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-07-003");
+        MyCommand a15 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-07-003");
         CommandList.add(a15);
 
-        MyCommand a16 = new MyCommand("192.168.88.225", 4800, 0, "HS-DNC-sndir-03-002");
+        MyCommand a16 = new MyCommand("192.168.88.225", 4800, false, "HS-DNC-sndir-03-002");
         CommandList.add(a16);
-        MyCommand a17 = new MyCommand("192.168.88.225", 4800, 0, "HS-DNC-sndir-03-001");
+        MyCommand a17 = new MyCommand("192.168.88.225", 4800, false, "HS-DNC-sndir-03-001");
         CommandList.add(a17);
-        MyCommand a18 = new MyCommand("192.168.88.225", 4800, 0, "HS-DNC-sndir-03-003");
+        MyCommand a18 = new MyCommand("192.168.88.225", 4800, false, "HS-DNC-sndir-03-003");
         CommandList.add(a18);
 
-        MyCommand a19 = new MyCommand("192.168.88.225", 4800, 0, "HS-DNC-sndir-02-002");
+        MyCommand a19 = new MyCommand("192.168.88.225", 4800, false, "HS-DNC-sndir-02-002");
         CommandList.add(a19);
-        MyCommand a20 = new MyCommand("192.168.88.225", 4800, 0, "HS-DNC-sndir-02-001");
+        MyCommand a20 = new MyCommand("192.168.88.225", 4800, false, "HS-DNC-sndir-02-001");
         CommandList.add(a20);
-        MyCommand a21 = new MyCommand("192.168.88.225", 4800, 0, "HS-DNC-sndir-02-003");
+        MyCommand a21 = new MyCommand("192.168.88.225", 4800, false, "HS-DNC-sndir-02-003");
         CommandList.add(a21);
 
-        MyCommand a22 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-01-002");
+        MyCommand a22 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-01-002");
         CommandList.add(a22);
-        MyCommand a23 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-01-001");
+        MyCommand a23 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-01-001");
         CommandList.add(a23);
-        MyCommand a24 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-01-003");
+        MyCommand a24 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-01-003");
         CommandList.add(a24);
 
-        MyCommand a25 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-05-002");
+        MyCommand a25 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-05-002");
         CommandList.add(a25);
-        MyCommand a26 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-05-001");
+        MyCommand a26 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-05-001");
         CommandList.add(a26);
-        MyCommand a27 = new MyCommand("192.168.88.224", 4800, 0, "HS-DNC-sndir-05-003");
+        MyCommand a27 = new MyCommand("192.168.88.224", 4800, false, "HS-DNC-sndir-05-003");
         CommandList.add(a27);
     }
 

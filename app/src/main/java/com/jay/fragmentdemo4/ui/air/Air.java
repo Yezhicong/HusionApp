@@ -1,4 +1,4 @@
-package com.jay.fragmentdemo4;
+package com.jay.fragmentdemo4.ui.air;
 
 public class Air {
 

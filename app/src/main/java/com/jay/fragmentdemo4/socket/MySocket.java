@@ -6,17 +6,22 @@ import java.io.OutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.net.SocketAddress;
 
 public class MySocket {
+
+    public final static String TAG = "Socket";
 
     public static class TcpSocketConnect extends Thread{
         private String ip;
         private int port;
         private String msg;
-        private int isHex;
+        private boolean isHex;
+        private String recvMsg;
 
-        public TcpSocketConnect(String ip, int port, int isHex, String msg){
+        public TcpSocketConnect(String ip, int port, boolean isHex, String msg){
             this.ip = ip;
             this.port = port;
             this.msg = msg;
@@ -25,22 +30,23 @@ public class MySocket {
 
         public void run(){
             try {
-                Socket mSocket = new Socket(ip, port);
-                mSocket.setSoTimeout(1000);
+                Socket mSocket = new Socket();
+                SocketAddress socketAddress = new InetSocketAddress(ip, port);
+                mSocket.connect(socketAddress, 1000);
                 if(mSocket.isConnected()){
                     OutputStream mOutStream = mSocket.getOutputStream();
                     InputStream mInputStream = mSocket.getInputStream();
 
-                    if (isHex == 1) {
-                        mOutStream.write(hexStringToByteArray(msg));
-                    } else {
+                    if (!isHex) {
                         mOutStream.write(msg.getBytes());
+                    } else {
+                        mOutStream.write(hexStringToByteArray(msg));
                     }
 
-                    final byte[] buffer = new byte[1024];//创建接收缓冲区
-					final int len = mInputStream.read(buffer);//数据读出来，并且返回数据的长度
-                    if (len != 0){
-                        Log.i("TAG", new String(buffer,0, len));
+                    final byte[] buffer = new byte[102400];
+                    final int len = mInputStream.read(buffer);
+                    if (len > 0){
+                        recvMsg = new String(buffer,0, len);
                     }
 
                     mOutStream.flush();
@@ -48,10 +54,15 @@ public class MySocket {
                     mSocket.close();
                 }
             } catch (Exception e) {
-                Log.e("TAG", e.getMessage() + " / send: " + msg + " failed!");
+                Log.e(TAG, e.getMessage() + " / send: " + msg + " failed!");
+                recvMsg = "null";
                 return;
             }
-            Log.i("TAG", "send:" + msg + " success!");
+            Log.i(TAG, "succeed to connect to /" + ip + " (port " + port + ") / send: " + msg + " success!");
+        }
+
+        public String getReturnMsg(){
+            return recvMsg;
         }
     }
 
@@ -83,7 +94,7 @@ public class MySocket {
                 Log.e("TAG", e.getMessage() + " / send: " + msg + " failed!");
                 return;
             }
-            Log.i("TAG", " / send:" + msg + " success!");
+            Log.i("TAG", " / send: " + msg + " success!");
         }
     }
 

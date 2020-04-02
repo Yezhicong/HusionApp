@@ -1,4 +1,4 @@
-package com.jay.fragmentdemo4;
+package com.jay.fragmentdemo4.ui.computer;
 
 import android.app.Dialog;
 import android.os.Handler;
@@ -11,8 +11,10 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
-import com.jay.fragmentdemo4.MyClass.CommomDialog;
-import com.jay.fragmentdemo4.MyClass.MyCommand;
+
+import com.jay.fragmentdemo4.R;
+import com.jay.fragmentdemo4.View.CommomDialog;
+import com.jay.fragmentdemo4.View.MyCommand;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,7 +54,7 @@ public class ComputerAdapter extends RecyclerView.Adapter<ComputerAdapter.ViewHo
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 int position = holder.getAdapterPosition();
                 //Light light = mLightList.get(position);
-                final MyCommand myCommand = CommandList.get(position);
+                //final MyCommand myCommand = CommandList.get(position);
                 if(isChecked){
                     if (flag){
                         Log.i("TAG", "123");
@@ -119,31 +121,31 @@ public class ComputerAdapter extends RecyclerView.Adapter<ComputerAdapter.ViewHo
     }
 
     public void initCommand(){
-        MyCommand a1 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-01-on");
+        MyCommand a1 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-01-on");
         CommandList.add(a1);
-        MyCommand a2 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-01-off");
+        MyCommand a2 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-01-off");
         CommandList.add(a2);
-        MyCommand a3 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-02-on");
+        MyCommand a3 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-02-on");
         CommandList.add(a3);
-        MyCommand a4 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-02-off");
+        MyCommand a4 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-02-off");
         CommandList.add(a4);
-        MyCommand a5 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-03-on");
+        MyCommand a5 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-03-on");
         CommandList.add(a5);
-        MyCommand a6 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-03-off");
+        MyCommand a6 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-03-off");
         CommandList.add(a6);
-        MyCommand a7 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-04-on");
+        MyCommand a7 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-04-on");
         CommandList.add(a7);
-        MyCommand a8 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-04-off");
+        MyCommand a8 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-04-off");
         CommandList.add(a8);
-        MyCommand a9 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-05-on");
+        MyCommand a9 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-05-on");
         CommandList.add(a9);
-        MyCommand a10 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-05-off");
+        MyCommand a10 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-05-off");
         CommandList.add(a10);
-        MyCommand a11 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-06-on");
+        MyCommand a11 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-06-on");
         CommandList.add(a11);
-        MyCommand a12 = new MyCommand("192.168.88.247", 4800, 0, "HS-REL-setrelay-06-off");
+        MyCommand a12 = new MyCommand("192.168.88.247", 4800, false, "HS-REL-setrelay-06-off");
         CommandList.add(a12);
-        MyCommand a13 = new MyCommand("192.168.88.220", 4800, 0, "HS-REL-setrelay-03-");
+        MyCommand a13 = new MyCommand("192.168.88.220", 4800, false, "HS-REL-setrelay-03-");
         CommandList.add(a13);
     }
 

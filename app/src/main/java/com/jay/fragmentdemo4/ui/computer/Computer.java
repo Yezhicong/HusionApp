@@ -1,11 +1,11 @@
-package com.jay.fragmentdemo4;
+package com.jay.fragmentdemo4.ui.computer;
 
-public class Light {
+public class Computer {
 
     private String name;
     private int imageId;
 
-    public Light(String name, int imageId){
+    public Computer(String name, int imageId){
         this.name = name;
         this.imageId = imageId;
     }

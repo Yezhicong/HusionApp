@@ -6,10 +6,10 @@ public class MyCommand {
 
     private String ip;
     private int port;
-    private int isHex;
+    private boolean isHex;
     private String msg;
 
-    public MyCommand(String ip, int port, int isHex, String msg){
+    public MyCommand(String ip, int port, boolean isHex, String msg){
         this.ip = ip;
         this.port = port;
         this.isHex = isHex;
@@ -24,7 +24,7 @@ public class MyCommand {
         return port;
     }
 
-    public int getIsHex(){
+    public boolean getIsHex(){
         return isHex;
     }
 
